@@ -1,5 +1,7 @@
 # python-webserver
-A small one-file implementation of a webserver able to send files and process browser requests
+A small one-file implementation of a webserver able to send files and process browser requests.
+
+If you want more install Apache, this is just a little tool with minimal support of everything.
 
 ## Prerequisities
 
