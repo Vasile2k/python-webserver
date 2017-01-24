@@ -61,6 +61,9 @@ class Parameters():
 class Headers():
 	_headers = []
 
+	def __init__(self):
+		self._headers = []
+
 	def add(self, object):
 		self._headers.append(object)
 
