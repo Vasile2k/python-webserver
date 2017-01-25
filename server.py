@@ -143,7 +143,7 @@ def talkToBrowser(connection, directory, data):
 
 	requestedFile = browser_headers.GET
 	if requestedFile == "/":
-		requestedFile = "index.html"
+		requestedFile = "/index.html"
 
 	headers = Headers()
 	absolutePath = directory + requestedFile
