@@ -112,24 +112,31 @@ def bindSocketAndListen(port):
 	sock.listen(1)
 	return sock
 
-print("Good! Everything seems to be ready! Let's start!")
 
 def main():
+
 	port, directory = parseArgs()
+
+	if __debug__:
+		print("Good! Everything seems to be ready! Let's start!")
+
 
 	sock = bindSocketAndListen(port)
 
-	print("Listening for browsers...")
+	if __debug__:
+		print("Listening for browsers...")
 
 	while True:
 		try:
 			connection, client_addr = sock.accept()
 			data = connection.recv(512)
 			talkToBrowser(connection, directory, data)
-			print("Sent some website!")
+			if __debug__:
+				print("Sent some website!")
 		finally:
 			connection.close()
-			print("Closed connection!")
+			if __debug__:
+				print("Closed connection!")
 
 	sock.close()
 
