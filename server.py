@@ -51,8 +51,8 @@ MIME_TYPES = {
 	"m2a"  : "audio/mpeg",
 	"mpa"  : "audio/mpeg",
 	"mpv"  : "audio/mpeg",
-	"webm" : "audio/webm",
-	"ogg"  : "audio/ogg",
+	# "webm" : "audio/webm",
+	# "ogg"  : "audio/ogg",
 	"wav"  : "audio/wav",
 
 	"webm" : "video/webm",
