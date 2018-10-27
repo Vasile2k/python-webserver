@@ -75,7 +75,6 @@ if not __name__ == "__main__":
 class Parameters():
 	GET = ""
 	POST = ""
-	pass
 
 class Headers():
 	_headers = []
@@ -89,8 +88,6 @@ class Headers():
 	def getHeaders(self):
 		return self._headers
 
-	pass
-		
 
 def parseArgs():
 	parser = argparse.ArgumentParser(description = "Simple python webserver")
