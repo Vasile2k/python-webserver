@@ -213,7 +213,7 @@ def parseBrowserData(data):
 def getMimeTypeForFile(extension):
 	try:
 		return MIME_TYPES[extension]
-	except:
+	except KeyError:
 		return "text/plain"
 
 main()
